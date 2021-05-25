@@ -83,6 +83,9 @@ body {
   height: 8vh;
   width: 60%;
   margin: 0 auto;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footer {

@@ -15,17 +15,16 @@ function errorHandler(error) {
 
 function clickHandler() {
   var inputText = textInput.value;
-}
+  console.log(textInput);
   fetch(getURL(inputText))
-    .then(async function(response) {
-      try {
-        const json = await response.json();
-        console.log(json);
-        var translatedData = json.contents.translated;
-        outputText.innerText = translatedData;
-      } catch (error) {
-        return errorHandler(error);
-      }
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      var translatedData = data.contents.translated;
+      outputText.innerText = translatedData;
+    });
 }
 
-buttonTranslate.addEventListener("click", clickHandler)
+buttonTranslate.addEventListener("click", clickHandler);
