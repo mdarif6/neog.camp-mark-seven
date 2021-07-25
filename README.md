@@ -1,6 +1,6 @@
 Morse Code Translator
 
-This app will convert english sentence to minion language.
+This app will convert english sentence to Morse Code.
 
 It is a talk to funny tranlation api.
 
